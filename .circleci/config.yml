@@ -1,22 +1,23 @@
 versions: 2.1
 
 jobs:
-  lint:
-    docker:
-      - image: cimg/node:18.20.0
-    steps:
-      - checkout
-      - run:
-          name: Install dependencies
-          command: npm ci
-      - run:
-          name: Run Eslint
-          command: npx eslint .
-      - run:
-          name: Check Prettier Formatting
-          command: npx prettier --check .
+    lint:
+        docker:
+            - image: cimg/node:18.20.0
+        steps:
+            - checkout
+            - run:
+                  name: Install dependencies
+                  command: npm ci
+            - run:
+                  name: Run Eslint
+                  command: npx eslint .
+            - run:
+                  name: Check Prettier Formatting
+                  command: npx prettier --check .
 
 workflows:
-  lint-workflow:
-    jobs:
-      - lint
+    version: 2
+    lint-workflow:
+        jobs:
+            - lint
