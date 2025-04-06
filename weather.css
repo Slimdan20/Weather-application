@@ -3,16 +3,14 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
     background:
-        linear-gradient(
-            rgba(10, 10, 10, 0.7),
-            rgba(10, 10, 10, 0.7)
-        ),
+    linear-gradient(rgba(10, 10, 10, 0.7),rgba(10, 10, 10, 0.7)),
         url(./image/malik-noman-GYKl2HLVTlQ-unsplash.jpg);
     background-position: center;
     background-size: cover;
