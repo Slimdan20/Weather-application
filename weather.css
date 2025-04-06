@@ -9,7 +9,11 @@ html {
 }
 
 body {
-    background: linear-gradient(rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.7)),
+    background:
+        linear-gradient(
+            rgba(10, 10, 10, 0.7),
+            rgba(10, 10, 10, 0.7)
+        ),
         url(./image/malik-noman-GYKl2HLVTlQ-unsplash.jpg);
     background-position: center;
     background-size: cover;
