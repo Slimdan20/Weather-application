@@ -13,7 +13,6 @@ export default defineConfig([
             prettier: prettierPlugin,
         },
         rules: {
-            'prettier/prettier': 'error',
             eqeqeq: 'error',
             'no-var': 'error',
             'prefer-const': 'warn',
